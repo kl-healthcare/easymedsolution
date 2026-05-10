@@ -1,134 +1,212 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impressum – easymedsolution</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            50:  '#eafafa',
-                            100: '#d3f4f6',
-                            200: '#a8eaee',
-                            300: '#7adee5',
-                            400: '#4cccd6',
-                            500: '#34BAC7',
-                            600: '#2aa6b3',
-                            700: '#23929e',
-                            800: '#1d7882',
-                            900: '#175e66',
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Impressum – easymedsolution</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            brand: {
+                                50: "#eafafa",
+                                100: "#d3f4f6",
+                                200: "#a8eaee",
+                                300: "#7adee5",
+                                400: "#4cccd6",
+                                500: "#34BAC7",
+                                600: "#2aa6b3",
+                                700: "#23929e",
+                                800: "#1d7882",
+                                900: "#175e66",
+                            },
+                            mint: {
+                                500: "#11CA84",
+                                600: "#02D182",
+                            },
+                            ink: {
+                                DEFAULT: "#3d4459",
+                                soft: "#353535",
+                                mute: "#737373",
+                            },
+                            line: "#DCE3E4",
+                            surface: "#F9F9F9",
                         },
-                        mint: {
-                            500: '#11CA84',
-                            600: '#02D182',
-                        },
-                        ink: {
-                            DEFAULT: '#3d4459',
-                            soft:    '#353535',
-                            mute:    '#737373',
-                        },
-                        line:    '#DCE3E4',
-                        surface: '#F9F9F9',
-                    }
-                }
+                    },
+                },
+            };
+        </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            body {
+                font-family: "Inter", sans-serif;
             }
-        }
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-    </style>
-</head>
-<body class="bg-white text-ink-soft antialiased">
-
-    <!-- Header -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-line">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-            <a href="index.html" class="text-2xl font-extrabold tracking-tight">
-                <span class="text-brand-500">easy</span><span class="text-ink">medsolution</span>
-            </a>
-            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-ink-mute">
-                <a href="index.html#leistungen" class="hover:text-brand-500 transition">Leistungen</a>
-                <a href="index.html#team" class="hover:text-brand-500 transition">Team</a>
-                <a href="index.html#kontakt" class="hover:text-brand-500 transition">Kontakt</a>
-            </nav>
-            <a href="mailto:info@easymedsolution.de" class="hidden md:inline-flex items-center px-4 py-2 rounded-lg bg-brand-500 text-white text-sm font-semibold hover:bg-brand-600 transition">
-                Anfrage senden
-            </a>
-        </div>
-    </header>
-
-    <!-- Content -->
-    <main class="max-w-3xl mx-auto px-6 py-16 md:py-24">
-        <a href="index.html" class="inline-flex items-center gap-2 text-sm text-brand-500 hover:text-brand-700 font-medium mb-8">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
-            Zurück zur Startseite
-        </a>
-
-        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-ink mb-10">Impressum</h1>
-
-        <div class="space-y-10 text-ink-soft leading-relaxed">
-            <section>
-                <h2 class="text-xl font-semibold text-ink mb-3">Angaben gemäß § 5 TMG</h2>
-                <p>
-                    easymedsolution<br>
-                    Dieter Kupferschmidt<br>
-                    Musterstraße 1<br>
-                    00000 Musterstadt<br>
-                    Deutschland
-                </p>
-            </section>
-
-            <section>
-                <h2 class="text-xl font-semibold text-ink mb-3">Vertreten durch</h2>
-                <p>Dieter Kupferschmidt (Geschäftsführer)</p>
-            </section>
-
-            <section>
-                <h2 class="text-xl font-semibold text-ink mb-3">Kontakt</h2>
-                <p>
-                    E-Mail: <a href="mailto:info@easymedsolution.de" class="text-brand-500 hover:underline">info@easymedsolution.de</a>
-                </p>
-            </section>
-
-            <section>
-                <h2 class="text-xl font-semibold text-ink mb-3">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
-                <p>
-                    Dieter Kupferschmidt<br>
-                    Musterstraße 1<br>
-                    00000 Musterstadt
-                </p>
-            </section>
-
-            <section>
-                <h2 class="text-xl font-semibold text-ink mb-3">Haftungsausschluss</h2>
-                <p>
-                    Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.
-                    Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.
-                </p>
-            </section>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="border-t border-line py-10 mt-12">
-        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-ink-mute">
-            <div>
-                <span class="font-extrabold"><span class="text-brand-500">easy</span><span class="text-ink">medsolution</span></span>
-                <span class="ml-2">© 2026 – Alle Rechte vorbehalten.</span>
+        </style>
+    </head>
+    <body class="bg-white text-ink-soft antialiased">
+        <!-- Header -->
+        <header
+            class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-line"
+        >
+            <div
+                class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between"
+            >
+                <a
+                    href="index.html"
+                    class="text-2xl font-extrabold tracking-tight"
+                >
+                    <span class="text-brand-500">easy</span
+                    ><span class="text-ink">medsolution</span>
+                </a>
+                <nav
+                    class="hidden md:flex items-center gap-8 text-sm font-medium text-ink-mute"
+                >
+                    <a
+                        href="index.html#leistungen"
+                        class="hover:text-brand-500 transition"
+                        >Leistungen</a
+                    >
+                    <a
+                        href="index.html#team"
+                        class="hover:text-brand-500 transition"
+                        >Team</a
+                    >
+                    <a
+                        href="index.html#kontakt"
+                        class="hover:text-brand-500 transition"
+                        >Kontakt</a
+                    >
+                </nav>
+                <a
+                    href="mailto:info@easymedsolution.de"
+                    class="hidden md:inline-flex items-center px-4 py-2 rounded-lg bg-brand-500 text-white text-sm font-semibold hover:bg-brand-600 transition"
+                >
+                    Anfrage senden
+                </a>
             </div>
-            <div class="flex gap-6">
-                <a href="impressum.html" class="hover:text-brand-500 transition">Impressum</a>
-                <a href="mailto:info@easymedsolution.de" class="hover:text-brand-500 transition">Kontakt</a>
-            </div>
-        </div>
-    </footer>
+        </header>
 
-</body>
+        <!-- Content -->
+        <main class="max-w-3xl mx-auto px-6 py-16 md:py-24">
+            <a
+                href="index.html"
+                class="inline-flex items-center gap-2 text-sm text-brand-500 hover:text-brand-700 font-medium mb-8"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M10 19l-7-7m0 0l7-7m-7 7h18"
+                    />
+                </svg>
+                Zurück zur Startseite
+            </a>
+
+            <h1
+                class="text-4xl md:text-5xl font-extrabold tracking-tight text-ink mb-10"
+            >
+                Impressum
+            </h1>
+
+            <div class="space-y-10 text-ink-soft leading-relaxed">
+                <section>
+                    <h2 class="text-xl font-semibold text-ink mb-3">
+                        Angaben gemäß § 5 TMG
+                    </h2>
+                    <p>
+                        easymedsolution<br />
+                        Dieter Kupferschmidt<br />
+                        St. Georg Str. 17/3<br />
+                        79261 Gutach im Breisgau<br />
+                        Deutschland
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-semibold text-ink mb-3">
+                        Vertreten durch
+                    </h2>
+                    <p>Dieter Kupferschmidt (Geschäftsführer)</p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-semibold text-ink mb-3">Kontakt</h2>
+                    <p>
+                        E-Mail:
+                        <a
+                            href="mailto:info@easymedsolution.de"
+                            class="text-brand-500 hover:underline"
+                            >info@easymedsolution.de</a
+                        >
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-semibold text-ink mb-3">
+                        Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
+                    </h2>
+                    <p>
+                        Dieter Kupferschmidt<br />
+                        St. Georg Str. 17/3<br />
+                        79261 Gutach im Breisgau<br />
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-semibold text-ink mb-3">
+                        Haftungsausschluss
+                    </h2>
+                    <p>
+                        Die Inhalte unserer Seiten wurden mit größter Sorgfalt
+                        erstellt. Für die Richtigkeit, Vollständigkeit und
+                        Aktualität der Inhalte können wir jedoch keine Gewähr
+                        übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1
+                        TMG für eigene Inhalte auf diesen Seiten nach den
+                        allgemeinen Gesetzen verantwortlich.
+                    </p>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="border-t border-line py-10 mt-12">
+            <div
+                class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-ink-mute"
+            >
+                <div>
+                    <span class="font-extrabold"
+                        ><span class="text-brand-500">easy</span
+                        ><span class="text-ink">medsolution</span></span
+                    >
+                    <span class="ml-2">© 2026 – Alle Rechte vorbehalten.</span>
+                </div>
+                <div class="flex gap-6">
+                    <a
+                        href="impressum.html"
+                        class="hover:text-brand-500 transition"
+                        >Impressum</a
+                    >
+                    <a
+                        href="mailto:info@easymedsolution.de"
+                        class="hover:text-brand-500 transition"
+                        >Kontakt</a
+                    >
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
