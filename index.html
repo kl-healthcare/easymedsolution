@@ -6,6 +6,39 @@
     <title>easymedsolution – Patientenversorgung & Medikamentenmanagement</title>
     <meta name="description" content="easymedsolution ist Ihr Partner für moderne Patientenversorgung und sicheres Medikamentenmanagement.">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50:  '#eafafa',
+                            100: '#d3f4f6',
+                            200: '#a8eaee',
+                            300: '#7adee5',
+                            400: '#4cccd6',
+                            500: '#34BAC7',
+                            600: '#2aa6b3',
+                            700: '#23929e',
+                            800: '#1d7882',
+                            900: '#175e66',
+                        },
+                        mint: {
+                            500: '#11CA84',
+                            600: '#02D182',
+                        },
+                        ink: {
+                            DEFAULT: '#3d4459',
+                            soft:    '#353535',
+                            mute:    '#737373',
+                        },
+                        line:    '#DCE3E4',
+                        surface: '#F9F9F9',
+                    }
+                }
+            }
+        }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,47 +46,47 @@
         body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body class="bg-white text-slate-800 antialiased">
+<body class="bg-white text-ink-soft antialiased">
 
     <!-- Header -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-line">
         <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
             <a href="/" class="text-2xl font-extrabold tracking-tight">
-                <span class="text-sky-600">easy</span><span class="text-slate-900">medsolution</span>
+                <span class="text-brand-500">easy</span><span class="text-ink">medsolution</span>
             </a>
-            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
-                <a href="#leistungen" class="hover:text-sky-600 transition">Leistungen</a>
-                <a href="#team" class="hover:text-sky-600 transition">Team</a>
-                <a href="#kontakt" class="hover:text-sky-600 transition">Kontakt</a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-ink-mute">
+                <a href="#leistungen" class="hover:text-brand-500 transition">Leistungen</a>
+                <a href="#team" class="hover:text-brand-500 transition">Team</a>
+                <a href="#kontakt" class="hover:text-brand-500 transition">Kontakt</a>
             </nav>
-            <a href="mailto:info@easymedsolution.de" class="hidden md:inline-flex items-center px-4 py-2 rounded-lg bg-sky-600 text-white text-sm font-semibold hover:bg-sky-700 transition">
+            <a href="mailto:info@easymedsolution.de" class="hidden md:inline-flex items-center px-4 py-2 rounded-lg bg-brand-500 text-white text-sm font-semibold hover:bg-brand-600 transition">
                 Anfrage senden
             </a>
         </div>
     </header>
 
     <!-- Hero -->
-    <section class="relative overflow-hidden bg-gradient-to-b from-sky-50 to-white">
-        <div class="absolute inset-0 -z-10 opacity-40">
-            <div class="absolute top-20 -right-20 w-96 h-96 bg-sky-200 rounded-full blur-3xl"></div>
-            <div class="absolute -bottom-20 -left-20 w-96 h-96 bg-cyan-100 rounded-full blur-3xl"></div>
+    <section class="relative overflow-hidden bg-surface">
+        <div class="absolute inset-0">
+            <img src="images/hero_bg.png" alt="" class="w-full h-full object-cover object-right">
+            <div class="absolute inset-0 bg-gradient-to-r from-white via-white/85 to-white/30"></div>
         </div>
-        <div class="max-w-6xl mx-auto px-6 py-24 md:py-32">
-            <div class="max-w-3xl">
-                <span class="inline-block px-3 py-1 rounded-full bg-sky-100 text-sky-700 text-xs font-semibold uppercase tracking-wider mb-6">
+        <div class="max-w-6xl mx-auto px-6 py-24 md:py-32 relative">
+            <div class="max-w-2xl">
+                <span class="inline-block px-3 py-1 rounded-full bg-brand-100 text-brand-700 text-xs font-semibold uppercase tracking-wider mb-6">
                     Ihr Partner im Gesundheitswesen
                 </span>
-                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight">
-                    Lösungen für moderne <span class="text-sky-600">Patientenversorgung</span> und sicheres <span class="text-sky-600">Medikamentenmanagement</span>.
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-ink leading-tight">
+                    Lösungen für moderne <span class="text-brand-500">Patientenversorgung</span> und sicheres <span class="text-brand-500">Medikamentenmanagement</span>.
                 </h1>
-                <p class="mt-6 text-lg md:text-xl text-slate-600 leading-relaxed">
+                <p class="mt-6 text-lg md:text-xl text-ink-mute leading-relaxed">
                     Wir entwickeln intelligente Konzepte, die Pflegeeinrichtungen, Apotheken und Patienten im Alltag entlasten – verlässlich, digital und persönlich.
                 </p>
                 <div class="mt-10 flex flex-wrap gap-4">
-                    <a href="mailto:info@easymedsolution.de" class="inline-flex items-center px-6 py-3 rounded-lg bg-sky-600 text-white font-semibold hover:bg-sky-700 transition shadow-lg shadow-sky-600/20">
+                    <a href="mailto:info@easymedsolution.de" class="inline-flex items-center px-6 py-3 rounded-lg bg-brand-500 text-white font-semibold hover:bg-brand-600 transition shadow-lg shadow-brand-500/20">
                         Jetzt Kontakt aufnehmen
                     </a>
-                    <a href="#leistungen" class="inline-flex items-center px-6 py-3 rounded-lg border border-slate-200 text-slate-700 font-semibold hover:border-sky-600 hover:text-sky-600 transition">
+                    <a href="#leistungen" class="inline-flex items-center px-6 py-3 rounded-lg border border-line text-ink font-semibold hover:border-brand-500 hover:text-brand-500 transition">
                         Mehr erfahren
                     </a>
                 </div>
@@ -65,57 +98,55 @@
     <section id="leistungen" class="py-20 md:py-28">
         <div class="max-w-6xl mx-auto px-6">
             <div class="max-w-2xl mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">Warum easymedsolution?</h2>
-                <p class="mt-4 text-lg text-slate-600">Unsere Lösungen vereinen jahrelange Erfahrung im Gesundheitswesen mit modernen Prozessen.</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-ink tracking-tight">Warum easymedsolution?</h2>
+                <p class="mt-4 text-lg text-ink-mute">Unsere Lösungen vereinen jahrelange Erfahrung im Gesundheitswesen mit modernen Prozessen.</p>
             </div>
             <div class="grid md:grid-cols-3 gap-6">
-                <div class="p-8 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition">
-                    <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center mb-5">
+                <div class="p-8 rounded-2xl bg-white border border-line shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center mb-5">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-slate-900 mb-2">Maximale Sicherheit</h3>
-                    <p class="text-slate-600 leading-relaxed">Geprüfte Prozesse und höchste Qualitätsstandards bei jeder Medikamentenverblisterung und -ausgabe.</p>
+                    <h3 class="text-xl font-semibold text-ink mb-2">Maximale Sicherheit</h3>
+                    <p class="text-ink-mute leading-relaxed">Geprüfte Prozesse und höchste Qualitätsstandards bei jeder Medikamentenverblisterung und -ausgabe.</p>
                 </div>
-                <div class="p-8 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition">
-                    <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center mb-5">
+                <div class="p-8 rounded-2xl bg-white border border-line shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-mint-500/10 text-mint-500 flex items-center justify-center mb-5">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-slate-900 mb-2">Effizient & digital</h3>
-                    <p class="text-slate-600 leading-relaxed">Digitale Workflows reduzieren Aufwand in Pflege und Apotheke und schaffen Zeit für das Wesentliche – den Patienten.</p>
+                    <h3 class="text-xl font-semibold text-ink mb-2">Effizient & digital</h3>
+                    <p class="text-ink-mute leading-relaxed">Digitale Workflows reduzieren Aufwand in Pflege und Apotheke und schaffen Zeit für das Wesentliche – den Patienten.</p>
                 </div>
-                <div class="p-8 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition">
-                    <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center mb-5">
+                <div class="p-8 rounded-2xl bg-white border border-line shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center mb-5">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-5.13a4 4 0 11-8 0 4 4 0 018 0zm6 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
                     </div>
-                    <h3 class="text-xl font-semibold text-slate-900 mb-2">Persönlich betreut</h3>
-                    <p class="text-slate-600 leading-relaxed">Ein erfahrener Ansprechpartner an Ihrer Seite – von der ersten Beratung bis zur dauerhaften Betreuung.</p>
+                    <h3 class="text-xl font-semibold text-ink mb-2">Persönlich betreut</h3>
+                    <p class="text-ink-mute leading-relaxed">Ein erfahrener Ansprechpartner an Ihrer Seite – von der ersten Beratung bis zur dauerhaften Betreuung.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Team -->
-    <section id="team" class="py-20 md:py-28 bg-slate-50">
+    <section id="team" class="py-20 md:py-28 bg-surface">
         <div class="max-w-6xl mx-auto px-6">
             <div class="max-w-2xl mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">Unser Team</h2>
-                <p class="mt-4 text-lg text-slate-600">Erfahrung trifft auf Vision – kennen Sie die Menschen hinter easymedsolution.</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-ink tracking-tight">Unser Team</h2>
+                <p class="mt-4 text-lg text-ink-mute">Erfahrung trifft auf Vision – kennen Sie die Menschen hinter easymedsolution.</p>
             </div>
             <div class="grid md:grid-cols-2 gap-12 items-center max-w-4xl">
                 <div class="relative">
-                    <div class="aspect-square rounded-2xl bg-gradient-to-br from-sky-100 to-cyan-50 border border-slate-100 flex items-center justify-center overflow-hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-32 h-32 text-sky-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
-                        </svg>
+                    <div class="aspect-square rounded-2xl bg-gradient-to-br from-brand-100 to-white border border-line overflow-hidden">
+                        <img src="images/dieter.png" alt="Dieter Kupferschmidt, CEO" class="w-full h-full object-cover">
                     </div>
                 </div>
                 <div>
-                    <span class="inline-block px-3 py-1 rounded-full bg-sky-100 text-sky-700 text-xs font-semibold uppercase tracking-wider mb-4">
+                    <span class="inline-block px-3 py-1 rounded-full bg-brand-100 text-brand-700 text-xs font-semibold uppercase tracking-wider mb-4">
                         Geschäftsführung
                     </span>
-                    <h3 class="text-2xl md:text-3xl font-bold text-slate-900">Dieter Kupferschmidt</h3>
-                    <p class="text-sky-600 font-semibold mt-1">Chief Executive Officer</p>
-                    <p class="mt-5 text-slate-600 leading-relaxed">
+                    <h3 class="text-2xl md:text-3xl font-bold text-ink">Dieter Kupferschmidt</h3>
+                    <p class="text-brand-500 font-semibold mt-1">Chief Executive Officer</p>
+                    <p class="mt-5 text-ink-mute leading-relaxed">
                         Mit langjähriger Erfahrung im Gesundheitswesen leitet Dieter Kupferschmidt die strategische Ausrichtung von easymedsolution und sorgt dafür, dass unsere Lösungen nah an den Bedürfnissen der Branche bleiben.
                     </p>
                 </div>
@@ -126,15 +157,15 @@
     <!-- CTA -->
     <section id="kontakt" class="py-20 md:py-28">
         <div class="max-w-5xl mx-auto px-6">
-            <div class="relative rounded-3xl bg-gradient-to-br from-sky-600 to-sky-700 px-8 md:px-16 py-16 md:py-20 text-center overflow-hidden">
+            <div class="relative rounded-3xl bg-gradient-to-br from-brand-500 to-brand-700 px-8 md:px-16 py-16 md:py-20 text-center overflow-hidden">
                 <div class="absolute inset-0 opacity-10">
                     <div class="absolute -top-10 -right-10 w-60 h-60 bg-white rounded-full blur-3xl"></div>
                     <div class="absolute -bottom-10 -left-10 w-60 h-60 bg-white rounded-full blur-3xl"></div>
                 </div>
                 <div class="relative">
                     <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">Bereit, gemeinsam neue Wege zu gehen?</h2>
-                    <p class="mt-4 text-lg text-sky-100 max-w-2xl mx-auto">Wir freuen uns auf Ihre Nachricht und besprechen mit Ihnen unverbindlich, wie easymedsolution Sie unterstützen kann.</p>
-                    <a href="mailto:info@easymedsolution.de" class="mt-10 inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-white text-sky-700 font-semibold hover:bg-sky-50 transition shadow-xl">
+                    <p class="mt-4 text-lg text-brand-100 max-w-2xl mx-auto">Wir freuen uns auf Ihre Nachricht und besprechen mit Ihnen unverbindlich, wie easymedsolution Sie unterstützen kann.</p>
+                    <a href="mailto:info@easymedsolution.de" class="mt-10 inline-flex items-center gap-2 px-8 py-4 rounded-lg bg-white text-brand-700 font-semibold hover:bg-brand-50 transition shadow-xl">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                         info@easymedsolution.de
                     </a>
@@ -144,15 +175,15 @@
     </section>
 
     <!-- Footer -->
-    <footer class="border-t border-slate-100 py-10">
-        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+    <footer class="border-t border-line py-10">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-ink-mute">
             <div>
-                <span class="font-extrabold"><span class="text-sky-600">easy</span><span class="text-slate-900">medsolution</span></span>
+                <span class="font-extrabold"><span class="text-brand-500">easy</span><span class="text-ink">medsolution</span></span>
                 <span class="ml-2">© 2026 – Alle Rechte vorbehalten.</span>
             </div>
             <div class="flex gap-6">
-                <a href="impressum.html" class="hover:text-sky-600 transition">Impressum</a>
-                <a href="mailto:info@easymedsolution.de" class="hover:text-sky-600 transition">Kontakt</a>
+                <a href="impressum.html" class="hover:text-brand-500 transition">Impressum</a>
+                <a href="mailto:info@easymedsolution.de" class="hover:text-brand-500 transition">Kontakt</a>
             </div>
         </div>
     </footer>
